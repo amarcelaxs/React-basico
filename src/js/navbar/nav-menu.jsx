@@ -1,10 +1,18 @@
 import React from 'react';
 
 class NavMenu extends React.Component {
+  constructor(props){
+    super(props);
+    this.state  =  {menuAtivo: "Home"};
+  }
   render(){
+    
+
+    let self = this;
+
     let lista =this.props.menu.map(function(value){
       return(
-        <li key={value.titulo}><a href={value.link}>{value.titulo}</a></li>
+        <li key={value.titulo} className={self.state.menuAntigo == value.titulo ? 'active' : ''} ><a href={value.link}>{value.titulo}</a></li>
       );
     });
 

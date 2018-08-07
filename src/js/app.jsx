@@ -3,18 +3,16 @@ import React from 'react';
 
 import Titulo from './titulo/titulo';
 import Navbar from './navbar/navbar';
-import Cartao from './cartao/cartao';
+import ListaCartao from './cartao/lista-cartao';
 
 let App = (
   <div >
     <Navbar titulo="React"  cor="purple"/>
     <div className="container">
       <Titulo />
-      <div className="row">
-          <div  className="col m4">
-                <Cartao />
-          </div>
-      </div>
+      
+      <ListaCartao qtdLinha="3"  tamanhoCol="4"/>
+      
     </div>
   </div>
 );
