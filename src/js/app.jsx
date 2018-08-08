@@ -6,13 +6,14 @@ import Navbar from './navbar/navbar';
 import ListaCartao from './cartao/lista-cartao';
 
 let App = (
-  <div >
-    <Navbar titulo="React"  cor="purple"/>
+  <div>
+    <Navbar titulo="React" cor="purple" />
     <div className="container">
       <Titulo />
-      
-      <ListaCartao qtdLinha="3"  tamanhoCol="4"/>
-      
+
+      <ListaCartao qtdLinha="3" tamanhoCol="4" />
+
+
     </div>
   </div>
 );
